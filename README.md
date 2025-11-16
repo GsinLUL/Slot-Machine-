@@ -1,5 +1,5 @@
-# Automat
-Slot machine Game in Python
+# Slot-Machine
+Light Text Based Slot machine Game in Python
 # How To Play
 1. Go to Releases
 2. Download the latest Zip 

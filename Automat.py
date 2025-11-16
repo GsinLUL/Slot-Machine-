@@ -31,6 +31,8 @@ def hra(vkald):
                 f3 = ("\U0001F352")
             if (o3 == 3):
                 f3 = ("\U0001F34A")
+            print("ALPHA RELEASE")
+            print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("____________________________")
@@ -42,6 +44,8 @@ def hra(vkald):
             print("____________________________")
             if (f1==f2 and f2==f3):
                 os.system("cls")
+                print("ALPHA RELEASE")
+                print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
                 print("Your Balance:", penazenka,"+",(vklad*3))
                 print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
                 print("____________________________")
@@ -55,6 +59,11 @@ def hra(vkald):
                 input("Press Enter to continue...")
             else :
                 os.system("cls")
+
+                print("ALPHA RELEASE")
+                print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+                print("Your Balance:", penazenka)
+                print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
                 print("____________________________")
                 print("|       SLOT MACHINE       |")
                 print("|     _____ ____ _____     |")
@@ -82,6 +91,8 @@ def hra(vkald):
                 f3 = ("\U0001F352")
             if (o3 == 3):
                 f3 = ("\U0001F34A")
+            print("ALPHA RELEASE")
+            print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("____________________________")
@@ -102,6 +113,8 @@ while (True):
 
         while True:
             os.system("cls")
+            print("ALPHA RELEASE")
+            print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             try:

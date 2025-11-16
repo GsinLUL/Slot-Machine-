@@ -4,7 +4,7 @@ import time
 import string
 import os
 import math
-penazenka = 100
+penazenka = 500
 def hra(vkald):
     global penazenka
     for i in range (10) :

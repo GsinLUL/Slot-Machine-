@@ -13,24 +13,24 @@ def hra(vkald):
         o2 = random.randrange(1, 4)
         o3 = random.randrange(1, 4)
         if (i==9):
-            if (o1==1):
-                f1 = ("\U0001F600")
+            if (o1 == 1):
+                f1 = ("\U0001F349")
             if (o1 == 2):
                 f1 = ("\U0001F352")
             if (o1 == 3):
-                f1 = ("\U0001F34E")
-            if (o2==1):
-                f2 = ("\U0001F600")
+                f1 = ("\U0001F34A")
+            if (o2 == 1):
+                f2 = ("\U0001F349")
             if (o2 == 2):
                 f2 = ("\U0001F352")
             if (o2 == 3):
-                f2 = ("\U0001F34E")
+                f2 = ("\U0001F34A")
             if (o3 == 1):
-                f3 = ("\U0001F600")
+                f3 = ("\U0001F349")
             if (o3 == 2):
                 f3 = ("\U0001F352")
             if (o3 == 3):
-                f3 = ("\U0001F34E")
+                f3 = ("\U0001F34A")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("____________________________")
@@ -57,23 +57,23 @@ def hra(vkald):
                 input("Press Enter to continue...")
         else:
             if (o1==1):
-                f1 = ("\U0001F600")
+                f1 = ("\U0001F349")
             if (o1 == 2):
                 f1 = ("\U0001F352")
             if (o1 == 3):
-                f1 = ("\U0001F34E")
+                f1 = ("\U0001F34A")
             if (o2==1):
-                f2 = ("\U0001F600")
+                f2 = ("\U0001F349")
             if (o2 == 2):
                 f2 = ("\U0001F352")
             if (o2 == 3):
-                f2 = ("\U0001F34E")
+                f2 = ("\U0001F34A")
             if (o3 == 1):
-                f3 = ("\U0001F600")
+                f3 = ("\U0001F349")
             if (o3 == 2):
                 f3 = ("\U0001F352")
             if (o3 == 3):
-                f3 = ("\U0001F34E")
+                f3 = ("\U0001F34A")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("____________________________")
@@ -91,13 +91,31 @@ while (True):
         time.sleep (3)
         break
     else :
-        print("Your Balance:",penazenka)
-        print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
-        vklad =int(input("Your bet: "))
-        while (vklad > penazenka or vklad <= 0):
+
+        while True:
             os.system("cls")
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
-            vklad = int(input("Your bet: "))
+            try:
+                vklad = int(input("Your bet: "))
+                if (vklad <= 0):
+                    os.system("cls")
+                    print ("bet must be higher than 0")
+                    time.sleep(0.5)
+                    input("Press Enter to continue...")
+                    continue
+                if vklad > penazenka:
+                    os.system("cls")
+                    print("Not enough money")
+                    time.sleep(0.5)
+                    input("Press Enter to continue...")
+                    continue
+                break
+            except ValueError:
+                os.system("cls")
+                print ("bet must be A NUMBER")
+                time.sleep(0.5)
+                input("Press Enter to continue...")
+
         penazenka = penazenka - vklad
         hra(vklad)

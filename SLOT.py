@@ -18,19 +18,19 @@ def hra(vkald):
             if (o1 == 2):
                 f1 = ("\U0001F352")
             if (o1 == 3):
-                f1 = ("\U0001F34A")
+                f1 = (" 7")
             if (o2 == 1):
                 f2 = ("\U0001F349")
             if (o2 == 2):
                 f2 = ("\U0001F352")
             if (o2 == 3):
-                f2 = ("\U0001F34A")
+                f2 = (" 7")
             if (o3 == 1):
                 f3 = ("\U0001F349")
             if (o3 == 2):
                 f3 = ("\U0001F352")
             if (o3 == 3):
-                f3 = ("\U0001F34A")
+                f3 = (" 7")
             print("ALPHA RELEASE")
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("Your Balance:", penazenka)
@@ -42,7 +42,21 @@ def hra(vkald):
             print("|     ‾‾‾‾‾ ‾‾‾‾ ‾‾‾‾‾     |")
             print("|                          |")
             print("____________________________")
-            if (f1==f2 and f2==f3):
+            if (o1==3 and o2==3 and o3==3):
+                print("ALPHA RELEASE")
+                print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+                print("Your Balance:", penazenka, "+", (vklad * 6))
+                print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+                print("____________________________")
+                print("|       SLOT MACHINE       |")
+                print("|     _____ ____ _____     |")
+                print("|     |", f1, "|", f2, "|", f3, "|     |")
+                print("|     ‾‾‾‾‾ ‾‾‾‾ ‾‾‾‾‾     |")
+                print("|         JACKPOT!         |")
+                print("____________________________")
+                penazenka = penazenka + (vklad * 6)
+                input("Press Enter to continue...")
+            elif (f1==f2 and f2==f3):
                 os.system("cls")
                 print("ALPHA RELEASE")
                 print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
@@ -73,24 +87,24 @@ def hra(vkald):
                 print("____________________________")
                 input("Press Enter to continue...")
         else:
-            if (o1==1):
+            if (o1 == 1):
                 f1 = ("\U0001F349")
             if (o1 == 2):
                 f1 = ("\U0001F352")
             if (o1 == 3):
-                f1 = ("\U0001F34A")
-            if (o2==1):
+                f1 = (" 7")
+            if (o2 == 1):
                 f2 = ("\U0001F349")
             if (o2 == 2):
                 f2 = ("\U0001F352")
             if (o2 == 3):
-                f2 = ("\U0001F34A")
+                f2 = (" 7")
             if (o3 == 1):
                 f3 = ("\U0001F349")
             if (o3 == 2):
                 f3 = ("\U0001F352")
             if (o3 == 3):
-                f3 = ("\U0001F34A")
+                f3 = (" 7")
             print("ALPHA RELEASE")
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             print("Your Balance:", penazenka)

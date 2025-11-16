@@ -97,8 +97,11 @@ while (True):
             print("Your Balance:", penazenka)
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
             try:
-                vklad = int(input("Your bet: "))
-                if (vklad <= 0):
+                print ("Type 0 to exit or ↓")
+                vklad = int(input("Enter your bet: "))
+                if (vklad == 0):
+                    exit()
+                if (vklad < 0):
                     os.system("cls")
                     print ("bet must be higher than 0")
                     time.sleep(0.5)

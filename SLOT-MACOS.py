@@ -43,6 +43,7 @@ def hra(vkald):
             print("|                          |")
             print("____________________________")
             if (o1==3 and o2==3 and o3==3):
+                os.system("clear")
                 print("ALPHA RELEASE")
                 print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
                 print("Your Balance:", penazenka, "+", (vklad * 6))
